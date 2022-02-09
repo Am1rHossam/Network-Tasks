@@ -1,0 +1,51 @@
+-Difference between Routers and Switches:
+
+	Routers : Its a network device that can connect between different network domains and also it routes the IP packets to its correct destinations
+		*Each  interface in the router is a separated network* "Layer 3"
+
+	Switches : Network device that can connect two or more  devices in the same network "Layer 2"
+
+-What is the routing table?
+	It is a set of rules that contains the information necessary to forward a packet along the best path toward its destination is used to determine where data packets traveling over an IP.
+ 	Routing Table includes 5 parameters :
+
+	1-Destination : The IP of the final destination
+	2-Next hop: The Ip address to which the packet is forwarded
+	3-Interface: The outgoing network interface the device should use when forwarding the pakcet to the next hop
+	4-Metric: Assigns a cost to each available route so that the most cost-effective path can be chosen
+	5-Routes: Includes directly-attached subnets, indirect subnets that are not attached to the device but can be accessed through anouther devices.
+
+-What is the difference between Public and Private IP?
+
+                    Public IP			Private IP
+	         Scope is global 	     Scope is local
+
+                Used to commuincate         Used to communicate
+		with the devices             with the devices 
+		outside	the network.	     inside the network
+
+                needs Internet service      works in LAN only
+
+		Costs money			Free to use
+
+		Range:all IPs except the    10.0.0.0 => 10.255.255.255 /xx
+		reserved IPs (private)      172.16.0.0 => 172.31.255.255 /xx
+					    192.168.0.0 => 192.168.255.255 /xx
+
+		
+-Difference between Private and Public Subnets
+
+	Public: its used for instances that need a public IP to be accessible for the internet.
+
+	Private : its uused for instances that do not need to be directly attatched to the internet.		
+
+
+-Three mitigation methods:
+	1)Conduct a risk assessment to determine vulnerabilities: That shows the potential gaps in the organization's security
+	2)Establish network access controls: that helps to mitigate the risk of insider threats
+	3)Implement Firwalls and Antivirus software: It offers ann additional barrier to the network, Firewalls acts as a buffer between the internet and the local network
+	and antivirus software searches inside your device to find a malicious threats.
+	4)Create a patch management schedule: that helps the organization's IT team to stay ahead of the attackers
+	5)Continuously monitor network traffic:The way to stay ahead of cybercriminals is to continuously monitor the network traffic.
+	6)Build an incident responce plan:It helps your organization do as much as possible to reamin proactively prepared by ensuring that everyone in 
+	the organization including IT security and non tech teams about what they're responsible for.
